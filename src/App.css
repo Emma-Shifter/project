@@ -136,3 +136,27 @@ p {
 .RegPage .add-line-container {
   margin-bottom: 18px;
 }
+
+.RestorePasswordPage {
+  padding: 343px;
+}
+.RestorePasswordPage p {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+.RestorePasswordPage .Field{
+  margin-bottom: 23px;
+  width: 100%;
+}
+
+.RestorePasswordPage .Field label {
+  font-size: 58px;
+}
+.RestorePasswordPage .Field input {
+  height: 116px;
+}
+
+.RestorePasswordPage .Button {
+  align-self: start;
+}
