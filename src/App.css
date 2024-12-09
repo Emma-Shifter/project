@@ -63,6 +63,7 @@ p {
 }
 
 .Field {
+  min-width: 729px;
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +99,7 @@ p {
   width: 73px;
   height: 2px;
 }
-.LoginPage {
+.LoginPage, .RegPage {
   padding: 208px;
 }
 .enter-link {
@@ -117,4 +118,21 @@ p {
 }
 .password-field {
   margin-top: 26px;
+}
+
+.RegPage h2 {
+  margin-bottom: 20px;
+}
+
+.RegPage .Field {
+  margin-bottom: 26.5px;
+}
+
+.reg-btn {
+  padding: 17px 54px 10px;
+  margin-bottom: 45px;
+}
+
+.RegPage .add-line-container {
+  margin-bottom: 18px;
 }
