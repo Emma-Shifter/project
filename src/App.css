@@ -13,6 +13,11 @@
   src: url(./font/MONT-SEMIBOLD.TTF);
   font-weight: 700;
 }
+@font-face {
+  font-family: "Mont";
+  src: url(./font/MONT-BLACK.TTF);
+  font-weight: 900;
+}
 * {
   margin: 0;
 }
@@ -32,6 +37,10 @@
   color: white;
 }
 
+body {
+  background-image: url(./img/background.png);
+}
+
 .page-container {
   font-family: "Mont";
   display: flex;
@@ -39,7 +48,6 @@
   align-items: center;
   margin: 0 auto;
   max-width: 80%;
-  background-image: url(./img/background.png);
   color: #ffffff;
 }
 
@@ -159,4 +167,62 @@ p {
 
 .RestorePasswordPage .Button {
   align-self: start;
+}
+
+.TestCasePage {
+  padding-top: 76px;
+}
+
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 284px;
+  padding-right: 65px;
+}
+
+.Header .ALink {
+
+}
+
+.ALink {
+  color: #ffffff;
+  font-size: 29px;
+  text-decoration: none;
+}
+
+.main-title {
+  font-size: 96px;
+  font-weight: 900;
+  color: #FB74E5;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.testcase-container {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 19px 27px 27px;
+}
+
+.Search input{
+  height: 36px;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 8px 8px 38px;
+  background-image: url(./img/search.svg);
+  background-position-y: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: black;
+  font-family: "Mont";
+  font-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.header-fields {
+  display: flex;
+  gap: 19px;
+  align-items: center;
 }
