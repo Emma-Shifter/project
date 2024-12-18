@@ -5,6 +5,7 @@ import RegPage from './pages/RegPage.jsx';
 import RestorePasswordPage from './pages/RestorePasswordPage.jsx';
 import TestCasePage from './pages/TestCasePage.jsx';
 import VacancyPage from './pages/VacancyPage.jsx';
+import CatalogVacancyPage from './pages/CatalogVacancyPage.jsx'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="registration" element={<RegPage />} />
         <Route path="restore" element={<RestorePasswordPage />} />
         <Route path="testcase" element={<TestCasePage />} />
-        <Route path="vacancy" element={<VacancyPage />} />\
+        <Route path="vacancy" element={<VacancyPage />} />
+        <Route path="catalog-vacancy" element={<CatalogVacancyPage />} />\
       </Routes>
     </BrowserRouter>
   );
