@@ -466,3 +466,57 @@ ul {
   background-position-x: right;
   padding-right: 26px;
 }
+
+.testcase-card-list {
+  margin-top: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 81px;
+  margin-bottom: 76px;
+}
+.testcase-card {
+  display: flex;
+  background-color: #ffffff;
+  padding: 27px;
+  border-radius: 16px;
+  gap: 37px;
+}
+.testcase-title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+}
+.testcase-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0px;
+}
+.testcase-info-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.testcase-card-company {
+  font-size: 27px;
+  color: #000000;
+}
+.testcase-card-description {
+  font-size: 40px;
+  color: #000000;
+  margin-top: 35px;
+  width: 80%;
+  margin-bottom: 13px; 
+}
+.testcase-card span {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 300;
+}
+.testcase-info-container .people-approve-container {
+  justify-content: left;
+}
+.testcase-card img{
+  height: min-content;
+}
