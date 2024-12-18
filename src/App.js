@@ -18,7 +18,7 @@ function App() {
         <Route path="testcase" element={<TestCasePage />} />
         <Route path="vacancy" element={<VacancyPage />} />
         <Route path="catalog-vacancy" element={<CatalogVacancyPage />} />
-        <Route path="catalog-tests" element={<CatalogTestsPage />} />\
+        <Route path="catalog-tests" element={<CatalogTestsPage />} />
       </Routes>
     </BrowserRouter>
   );

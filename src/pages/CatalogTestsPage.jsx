@@ -17,7 +17,7 @@ export default function CatalogTestsPage() {
             <div className='testcase-card-list'>
                 <div className='testcase-card'>
                     <img alt='img' src={defaultImage}></img>
-                    <div className='testcase-info-container'>
+                    <div className='catalog-testcase-info-container'>
                         <div>
                             <p className='testcase-title'>НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ</p>
                             <img alt='favorite' src={starFull}></img>

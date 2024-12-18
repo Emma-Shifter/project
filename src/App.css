@@ -486,13 +486,13 @@ ul {
   font-size: 40px;
   font-weight: 700;
 }
-.testcase-info-container {
+.catalog-testcase-info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 0px;
 }
-.testcase-info-container div {
+.catalog-testcase-info-container div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -514,7 +514,7 @@ ul {
   font-size: 40px;
   font-weight: 300;
 }
-.testcase-info-container .people-approve-container {
+.catalog-testcase-info-container .people-approve-container {
   justify-content: left;
 }
 .testcase-card img{
