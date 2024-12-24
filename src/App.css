@@ -520,3 +520,21 @@ ul {
 .testcase-card img{
   height: min-content;
 }
+
+.account-container {
+  display: flex;
+  gap: 163px;
+}
+.account-interface {
+  display: flex;
+  flex-direction: column;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
+}
+.account-info p{
+  font-size: 80px;
+  font-weight: 600;
+}
+

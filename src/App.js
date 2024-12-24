@@ -7,6 +7,7 @@ import TestCasePage from './pages/TestCasePage.jsx';
 import VacancyPage from './pages/VacancyPage.jsx';
 import CatalogVacancyPage from './pages/CatalogVacancyPage.jsx';
 import CatalogTestsPage from './pages/CatalogTestsPage.jsx';
+import AccountPage from './pages/AccountPage.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="vacancy" element={<VacancyPage />} />
         <Route path="catalog-vacancy" element={<CatalogVacancyPage />} />
         <Route path="catalog-tests" element={<CatalogTestsPage />} />
+        <Route path="account" element={<AccountPage />} />
       </Routes>
     </BrowserRouter>
   );
