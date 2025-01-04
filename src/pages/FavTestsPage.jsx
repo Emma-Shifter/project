@@ -23,7 +23,7 @@ const data =[{
         'title': "НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ",
         'company': "от кого тестовое",
         'img': defaultTCImage
-    }]
+    }];
 
 export default function FavTestsPage() {
     return (

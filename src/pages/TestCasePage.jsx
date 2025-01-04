@@ -3,6 +3,29 @@ import star from '../img/star.svg';
 import peopleApproveIcon from '../img/people-approve.svg';
 import Button from '../components/Button';
 import nextIcon from '../img/next.svg';
+import defaultTCImage from '../img/defaultTCImage.png';
+import TestCase from '../components/TestCase';
+
+const data =[{
+    'title': "НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ",
+    'company': "от кого тестовое",
+    'img': defaultTCImage
+}, 
+{
+    'title': "НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ",
+    'company': "от кого тестовое",
+    'img': defaultTCImage
+},  
+{
+    'title': "НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ",
+    'company': "от кого тестовое",
+    'img': defaultTCImage
+}, 
+{
+    'title': "НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ",
+    'company': "от кого тестовое",
+    'img': defaultTCImage
+}];
 
 export default function TestCasePage() {
     return (
@@ -22,6 +45,13 @@ export default function TestCasePage() {
                 <div className='similar'>
                     <img alt="next" src={nextIcon}></img>
                     <p>ПОХОЖЕЕ</p>
+                </div>
+            </div>
+
+            <div className='popup'>
+                <div className='popup-info'>
+                    {data.map(x => <TestCase tsTitle={x.title} tsCompany={x.company} tsImage={x.img}></TestCase>) }
+                    <Button buttonText='УВИДЕТЬ ЕЩЁ'></Button>
                 </div>
             </div>
         </div>

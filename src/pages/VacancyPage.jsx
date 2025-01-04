@@ -2,7 +2,30 @@ import Header from '../components/Header';
 import starFull from '../img/star-full.svg';
 import Button from '../components/Button';
 import nextIcon from '../img/next.svg';
-import phone from '../img/phone.svg'
+import phone from '../img/phone.svg';
+import defaultTCImage from '../img/defaultTCImage.png';
+import TestCase from '../components/TestCase';
+
+const data =[{
+    'title': "НАЗВАНИЕ СТАЖИРОВКИ",
+    'company': "от кого стажировка",
+    'img': defaultTCImage
+}, 
+{
+    'title': "НАЗВАНИЕ СТАЖИРОВКИ",
+    'company': "от кого стажировка",
+    'img': defaultTCImage
+},  
+{
+    'title': "НАЗВАНИЕ СТАЖИРОВКИ",
+    'company': "от кого стажировка",
+    'img': defaultTCImage
+}, 
+{
+    'title': "НАЗВАНИЕ СТАЖИРОВКИ",
+    'company': "от кого стажировка",
+    'img': defaultTCImage
+}];
 
 export default function VacancyPage() {
     return (
@@ -52,6 +75,13 @@ export default function VacancyPage() {
                 <div className='similar'>
                     <img alt="next" src={nextIcon}></img>
                     <p>ПОХОЖЕЕ</p>
+                </div>
+            </div>
+
+            <div className='popup'>
+                <div className='popup-info'>
+                    {data.map(x => <TestCase tsTitle={x.title} tsCompany={x.company} tsImage={x.img}></TestCase>) }
+                    <Button buttonText='УВИДЕТЬ ЕЩЁ'></Button>
                 </div>
             </div>
         </div>
