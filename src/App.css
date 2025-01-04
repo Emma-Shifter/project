@@ -538,3 +538,55 @@ ul {
   font-weight: 600;
 }
 
+.account-image {
+  width: fit-content;
+  margin: 0 auto;
+  border: 10px #FB74E5 solid;
+  padding: 10px;
+  border-radius: 500px;
+  margin-bottom: 124px;
+}
+
+.account-image img {
+  border: 10px #FB74E5 solid;
+  border-radius: 500px;
+}
+
+.account-info .Field{
+  margin-bottom: 27px;
+}
+
+.account-info .Button {
+  font-size: 22px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.custom-list-title, 
+.custom-list-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.custom-list-title img, 
+.custom-list-item img{
+  height: 70%;
+}
+
+.custom-list-item p{
+  font-size: 56px;
+}
+
+.custom-list-title p{
+  font-weight: 700;
+  font-size: 68px;
+}
+
+.custom-list-item {
+  margin-left: 60px;
+}
+
+.AccountPage {
+  margin-bottom: 163px;
+}

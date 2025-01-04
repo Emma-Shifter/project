@@ -11,18 +11,18 @@ export default function AccountPage() {
             <Header></Header>
             <div className='account-container'>
                 <div className='account-interface'>
-                    <div>
+                    <div className='account-image'>
                         <img alt='account' src={defaultAccountImg}></img>
                     </div>
-                    <div>
+                    <div className='custom-list-title'>
                         <img alt='starFull' src={starFull}></img>
                         <p>ИЗБРАННОЕ</p>
                     </div>
-                    <div>
+                    <div className='custom-list-item'>
                         <img alt='star' src={star}></img>
                         <p>ТЕСТЫ</p>
                     </div>
-                    <div>
+                    <div className='custom-list-item'>
                         <img alt='star' src={star}></img>
                         <p>СТАЖИРОВКИ</p>
                     </div>
@@ -35,7 +35,7 @@ export default function AccountPage() {
                     <Field labelText="E-mail"></Field>
                     <Field labelText="Номер телефона"></Field>
                     <Field labelText="Пароль"></Field>
-                    <Button buttonText="Редактировать профиль"></Button>
+                    <Button buttonText="РЕДАКТИРОВАТЬ ПРОФИЛЬ"></Button>
                 </div>
             </div>
         </div>
