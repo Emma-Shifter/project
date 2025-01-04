@@ -2,8 +2,24 @@ import defaultImage from '../img/default-img.png';
 import Header from '../components/Header';
 import Option from '../components/Option';
 import Search from '../components/Search';
-import starFull from '../img/star-full.svg';
-import peopleApprove from '../img/people-approve.svg';
+import TestCaseCard from '../components/TestCaseCard';
+
+const data = [
+    {
+        'title': 'НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ',
+        'company': 'от кого тестовое',
+        'desc': 'Описание задания и немного данных о нем', 
+        'people': 15, 
+        'img': defaultImage
+    },
+    {
+        'title': 'НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ',
+        'company': 'от кого тестовое',
+        'desc': 'Описание задания и немного данных о нем', 
+        'people': 15, 
+        'img': defaultImage
+    }
+]
 
 export default function CatalogTestsPage() {
     return (
@@ -15,36 +31,7 @@ export default function CatalogTestsPage() {
                 <Option optionText="Работодатель"></Option>
             </div>
             <div className='testcase-card-list'>
-                <div className='testcase-card'>
-                    <img alt='img' src={defaultImage}></img>
-                    <div className='catalog-testcase-info-container'>
-                        <div>
-                            <p className='testcase-title'>НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ</p>
-                            <img alt='favorite' src={starFull}></img>
-                        </div>
-                        <p className='testcase-card-company'>от кого тестовое</p>
-                        <p className='testcase-card-description'>Описание задания и немного данных о нем</p>
-                        <div className='people-approve-container'>
-                            <img alt='people' src={peopleApprove}></img>
-                            <span>15</span>
-                        </div>
-                    </div>
-                </div>
-                <div className='testcase-card'>
-                    <img alt='img' src={defaultImage}></img>
-                    <div className='testcase-info-container'>
-                        <div>
-                            <p className='testcase-title'>НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ</p>
-                            <img alt='favorite' src={starFull}></img>
-                        </div>
-                        <p className='testcase-card-company'>от кого тестовое</p>
-                        <p className='testcase-card-description'>Описание задания и немного данных о нем</p>
-                        <div className='people-approve-container'>
-                            <img alt='people' src={peopleApprove}></img>
-                            <span>15</span>
-                        </div>
-                    </div>
-                </div>
+                {data.map(x => <TestCaseCard tccTitle={x.title} tccCompany={x.company} tccImage={x.img} tccDesc={x.desc} tccPeople={x.people}></TestCaseCard>) }
             </div>
         </div>
     )

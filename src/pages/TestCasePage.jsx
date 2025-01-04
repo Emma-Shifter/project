@@ -27,20 +27,22 @@ const data =[{
     'img': defaultTCImage
 }];
 
+const data2 = ['НАЗВАНИЕ ТЕСТОВОГО ЗАДАНИЯ', 15, 'текстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстекст']
+
 export default function TestCasePage() {
     return (
         <div className="page-container TestCasePage">
             <Header></Header>
-            <p className="main-title">НАЗВАНИЕ <br></br>ТЕСТОВОГО ЗАДАНИЯ</p>
+            <p className="main-title">{data2[0]}</p>
             <div className='testcase-container'>
                 <div className='testcase-info-container'>
                     <div className='testcase-info'>
                         <img alt="people-approve" src={peopleApproveIcon}></img>
-                        <p>15</p>
+                        <p>{data2[1]}</p>
                     </div>
                     <img alt="star" src={star}></img>
                 </div>
-                <textarea rows={7}>текстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстексттекстекстекстекст</textarea>
+                <textarea rows={7}>{data2[2]}</textarea>
                 <Button buttonText="ПОСМОТРЕТЬ ОТВЕТ"></Button>
                 <div className='similar'>
                     <img alt="next" src={nextIcon}></img>

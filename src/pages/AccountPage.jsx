@@ -5,6 +5,8 @@ import Button from '../components/Button';
 import starFull from '../img/star-full.svg';
 import star from '../img/star.svg';
 
+const data = ['ФАМИЛИЯ', 'ИМЯ', 'ОТЧЕСТВО']
+
 export default function AccountPage() {
     return (
         <div className="page-container AccountPage">
@@ -28,9 +30,9 @@ export default function AccountPage() {
                     </div>
                 </div>
                 <div className='account-info'>
-                    <p>ФАМИЛИЯ</p>
-                    <p>ИМЯ</p>
-                    <p>ОТЧЕСТВО</p>
+                    <p>{data[0]}</p>
+                    <p>{data[1]}</p>
+                    <p>{data[2]}</p>
                     <Field labelText="Логин"></Field>
                     <Field labelText="E-mail"></Field>
                     <Field labelText="Номер телефона"></Field>

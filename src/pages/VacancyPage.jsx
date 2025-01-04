@@ -27,11 +27,15 @@ const data =[{
     'img': defaultTCImage
 }];
 
+const data2 = ['НАЗВАНИЕ СТАЖИРОВКИ', 'описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки',
+    ['пункт 1', 'пункт 2', 'пункт 3', 'пункт 4', 'пункт 5', 'пункт 6'], ['информация о компании', 'информация о компании', 'информация о компании', 'информация о компании', 'информация о компании', 'информация о компании']
+]
+
 export default function VacancyPage() {
     return (
         <div className="page-container VacancyPage">
             <Header></Header>
-            <p className="main-title">НАЗВАНИЕ СТАЖИРОВКИ </p>
+            <p className="main-title">{data2[0]}</p>
             <div className='vacancy-container'>
                 <div className='vacancy-info-container'>
                     <div>
@@ -41,19 +45,14 @@ export default function VacancyPage() {
                     </div>
                     <img alt="star" src={starFull}></img>
                 </div>
-                <textarea rows={4}>описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки описание стажировки </textarea>
+                <textarea rows={4}>{data2[1]}</textarea>
                 <h3>УРОВЕНЬ ДОХОДА</h3>
                 <Button buttonText="ОТКЛИКНУТЬСЯ"></Button>
                 <div className='vacancy-company-info-container'>
                     <div className='skills-container'>
                         <h4>ЧЕМУ НАУЧИТЕСЬ:</h4>
                         <ul>
-                            <li>пункт 1</li>
-                            <li>пункт 2</li>
-                            <li>пункт 3</li>
-                            <li>пункт 4</li>
-                            <li>пункт 5</li>
-                            <li>пункт 6</li>
+                            {data2[2].map(x => <li>{x}</li>) }
                         </ul>
                     </div>
 
@@ -63,12 +62,7 @@ export default function VacancyPage() {
                             <h4>КОМПАНИЯ</h4>
                         </div>
                         <ul>
-                            <li>информация о компании</li>
-                            <li>информация о компании</li>
-                            <li>информация о компании</li>
-                            <li>информация о компании</li>
-                            <li>информация о компании</li>
-                            <li>информация о компании</li>
+                            {data2[3].map(x => <li>{x}</li>) }
                         </ul>
                     </div>
                 </div>
