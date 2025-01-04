@@ -8,6 +8,8 @@ import VacancyPage from './pages/VacancyPage.jsx';
 import CatalogVacancyPage from './pages/CatalogVacancyPage.jsx';
 import CatalogTestsPage from './pages/CatalogTestsPage.jsx';
 import AccountPage from './pages/AccountPage.jsx';
+import FavTestsPage from './pages/FavTestsPage.jsx';
+import FavVacancyPage from './pages/FavVacancyPage.jsx';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="catalog-vacancy" element={<CatalogVacancyPage />} />
         <Route path="catalog-tests" element={<CatalogTestsPage />} />
         <Route path="account" element={<AccountPage />} />
+        <Route path="favourite-vacancy" element={<FavVacancyPage />} />
+        <Route path="favourite-tests" element={<FavTestsPage />} />
       </Routes>
     </BrowserRouter>
   );

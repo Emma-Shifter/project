@@ -590,3 +590,61 @@ ul {
 .AccountPage {
   margin-bottom: 163px;
 }
+
+.TestCase {
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #FB74E5;
+  border-radius: 9px;
+  display: flex;
+  padding: 14px 40px 14px 14px;
+  gap: 20px;
+  width: 70%;
+}
+
+.TestCase div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test-case-title {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.test-case-company {
+  font-size: 26px;
+  align-self: flex-start;
+}
+
+.fav-vacancy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  margin-top: 42px;
+}
+
+.fav-vacancy-list-btns {
+  display: flex;
+  gap: 41px;
+}
+
+.ALink.buttons {
+  padding: 15px 36px 13px;
+}
+
+.ALink.buttons.active {
+  border: 3px solid #FB74E5;
+  border-radius: 13px;
+}
+
+.FavVacancyPage, 
+.FavTestsPage {
+  margin-bottom: 120px;
+}
+
+.FavVacancyPage .TestCase {
+  width: 80%;
+}
